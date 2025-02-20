@@ -13,8 +13,10 @@ def simulate_twenty_years_of_investment(df, purchase_times=10, sample_size=1, et
 
         start = df[df['Year'] == start_year]
 
-        for _ in range(sample_size):
-            buy_prices = start.sample(purchase_times, replace=False)['Close'].values / 10
+        
+
+        for i in range(sample_size):
+            buy_prices = start.sample(purchase_times, replace=False,random_state = i)['Close'].values / 10
             portfolio_value = np.sum(etf_per_purchase * buy_prices)
             portfolio_value_not_invested = portfolio_value
             
@@ -58,8 +60,8 @@ def simulate_twenty_years_of_investment_gold(df, sample_size=30,purchase_times =
         if len(start) == 4:
             purchase_times = 1
 
-        for _ in range(sample_size):
-            buy_prices = start.sample(purchase_times, replace=False)['Close'].values
+        for i in range(sample_size):
+            buy_prices = start.sample(purchase_times, replace=False,random_state = i)['Close'].values
             capital_invested = np.sum(buy_prices) * ounce_per_purchase
             portfolio_value = end.Close.mean() * purchase_times * ounce_per_purchase
 
