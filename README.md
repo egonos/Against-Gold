@@ -9,6 +9,32 @@ This project aims to compare the returns of the traditional investment good  i.e
 * `data.py`, `long_term_simulations`, `annual_calculations` contain the functions and the cpi data that were used in main analysis.
 
 
+# Setup
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/egonos/Against-Gold.git
+cd Against-Gold
+```
+
+2. Create virtual environment
+```bash
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+```
+
+3. Install dependencies
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+After these steps, you can run the code inside the notebook files or Python scripts as needed.
 
 # References
 
