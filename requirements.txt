@@ -1,0 +1,10 @@
+pandas
+numpy
+tqdm
+scipy
+matplotlib
+mplfinance
+
+black
+black[jupyter]
+ruff
