@@ -8,6 +8,8 @@ This project aims to compare the returns of the traditional investment good  i.e
 
 * `data.py`, `long_term_simulations`, `annual_calculations` contain the functions and the cpi data that were used in main analysis.
 
+This project can be used for stock market returns analysis. By combining different trading strategies, one can compare good old buy-hold method with the more sophisticated ones.
+
 
 # Setup
 
